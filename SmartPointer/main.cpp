@@ -39,11 +39,14 @@ public:
 
 int main(int argc, const char * argv[]) {
     
-    LinkedList<std::string> ll;
+    Person p1("Tetsuya", 38);
+    Person p2("Erin", 30);
+    
+    LinkedList<Person> ll;
 
-    bool success = ll.Insert(1, "Hello");
+    bool success = ll.Insert(1, p1);
 
-    success = ll.Insert(2, "World");
+    success = ll.Insert(2, p2);
 
     ll.Clear();
     
